@@ -41,5 +41,4 @@ func (l *DetailLogic) Detail(req types.DetailRequest) (resp *types.DetailRespons
 		Status: res.Status,
 	}, nil
 
-	return
 }
