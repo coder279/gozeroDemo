@@ -1,10 +1,6 @@
-Name: order.rpc
-ListenOn: 127.0.0.1:9002
-
-Etcd:
-  Hosts:
-    - 127.0.0.1:2379
-  Key: order.rpc
+Name: Order
+Host: 0.0.0.0
+Port: 18002
 
 Mysql:
   DataSource: root:123456@tcp(127.0.0.1:3306)/mall?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
@@ -17,6 +13,7 @@ CacheRedis:
 Auth:
   AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
   AccessExpire: 86400
+
 
 OrderRpc:
   Etcd:
