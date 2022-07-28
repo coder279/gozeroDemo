@@ -126,3 +126,4 @@ func (m *defaultProductModel) FindAll(page, size int64, name string) (resp []*Pr
 	}
 
 }
+
